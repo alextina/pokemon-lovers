@@ -1,1 +1,75 @@
-// app global css in SCSS form
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-logo {
+  max-width: 20%;
+  margin: auto;
+  padding: 1em;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bolder;
+  color: $primary;
+  margin: 1em;
+}
+
+.card {
+  &-container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 30%;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: none;
+    background-color: white;
+    border: solid 1px $primary;
+
+    img {
+      width: 6em;
+    }
+
+    h3 {
+      text-transform: capitalize;
+      font-size: 2em;
+      font-weight: bold;
+      color: $primary;
+    }
+  }
+}
+
+.q-footer {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  color: white;
+  box-shadow: none;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
